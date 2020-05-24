@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="shortcut icon" type="image/x-icon" href="Projects/Website.png" />
 <title>Sayon Kathirgamanathan</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,7 +62,7 @@ body {
 }
 
 /* Create two unequal columns that sits next to each other */
-/* Sidebar/;eft column */
+/* Sidebar/left column */
 .side {
 	flex: 30%; /* Set the width of the sidebar */
 	background-color: #f1f1f1; /* Grey background color */
@@ -73,12 +74,15 @@ body {
 	flex: 70%; /* Set the width of the main content */
 	background-color: white; /* White background color */
 	padding: 20px; /* Some padding */
-} 
+}
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
 	.row {
 		flex-direction: column;
+	}
+	.exp {
+		flex-direciton: column;
 	}
 }
 
@@ -89,6 +93,30 @@ body {
 		width:100%;
 	}
 }
+
+/* Experience/Projects blocks */
+.exp {
+	padding: 30px; /* some padding */
+	background: #1abc9c; /* green background */
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+/* Experience/Project Columns */
+.column {
+	margin-right: 30px;
+}
+
+#more1 {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
+#more4 {display: none;}
+#more5 {display: none;}
+#more6 {display: none;}
+#more7 {display: none;}
+#more8 {display: none;}
+#more_exp {display: none;}
 	
 </style>
 </head>
@@ -102,28 +130,193 @@ body {
 <div class="navbar">
 	<a href="https://www.linkedin.com/in/sayon-kathirgamanathan/" target="_blank">LinkedIn</a>
 	<a href="https://github.com/sayonk" target="_blank">Github</a>
-	<a href="mailto:sayon.mk@gmail.com" target="_blank">Email</a>
-	<a href="Sayon_Kathirgamanathan.pdf" target="_blank" class="right">Resume</a>
+	<a href="Sayon_Kathirgamanathan.pdf" target="_blank">Resume</a>
+	<a href="mailto:sayon.mk@gmail.com" target="_blank" class="right">Email</a>
 </div>
 
 <div class="row">
 	<div class="side">
 		<h2>About me</h2>
 		<h5>Hello World!</h5>
-		<img src="Portrait.jpg" alt="Portrait" height="200">
-		<p>This is a website to showcase my skills, accomplishments, and projects</p>
+		<img src="Portrait.jpg" alt="Portrait" height="400">
 	</div>
 	<div class="main">
 		<h2>PROJECTS</h2>
-		<h5>Project 1</h5>
-		<h5>Project 2</h5>
-		<h5>Project 3</h5>
+		<div class="exp">
+			<div class="column">	
+				<img src="Projects/AddIt.png" alt="AddIt" height="100" width="100">
+			</div>
+			<div class="column">
+				<h2>AddIt</h2>
+				<h5>Andriod Application</h5>
+				<img src="Tech/Andriod.jpg" alt="Andriod" height="30" width="30">
+				<img src="Tech/Java.png" alt="Java" height="30" width="30">
+			</div>
+			<div class="column">	
+				<p><span id="less1"></span><span id="more1">
+				• Supports calculations for Math, Physics, Chemistry, and Statistics<br>
+				• Provides formulas for a range of disciplines<br>
+				• Pulls data from online sources for accurate results</p></span>
+				<button onclick="More('blk1', 'less1', 'more1', 'Read')" id="blk1">Read More</button>
+			</div>
+		</div>
+		<div class="exp">
+			<div class="column">	
+				<img src="Projects/Games.png" alt="Games" height="100" width="100">
+			</div>
+			<div class="column">
+				<h2>Board Games</h2>
+				<h5>Python Application</h5>
+				<img src="Tech/Python.png" alt="Python" height="30" width="30">
+			</div>
+			<div class="column">
+				<p><span id="less2"></span><span id="more2">			
+				• Allows user to play against the computer in Tic-Tac-Toe, Connect 4, Scrabble, Checkers, and Chess<br>
+				• Uses a unique AI for each game to determine the best possible move<br>
+				• Allows user to input a random game setup and calculates what the best possible move would be<br>
+				• Chess AI learns using a log of played games from online sources<br></span>
+				<button onclick="More('blk2', 'less2', 'more2', 'Read')" id="blk2">Read More</button>
+			</div>
+		</div>
+		<div class="exp">
+			<div class="column">	
+				<img src="Projects/Website.png" alt="Website" height="100" width="100">
+			</div>
+			<div class="column">
+				<h2>Personal Website</h2>
+				<h5>Web Application</h5>
+				<img src="Tech/HTMLJSCSS.png" alt="HTMLCSS" height="30" width="90">
+			</div>
+			<div class="column">
+				<p><span id="less3"></span><span id="more3">	
+				• Showcases skills, experiences, and projects<br>
+				• Includes links to contact information</p></span>
+				<button onclick="More('blk3', 'less3', 'more3', 'Read')" id="blk3">Read More</button>
+			</div>
+		</div>
 		<h2>EXPERIENCE</h2>
-		<h5>Experience 1</h5>
-		<h5>Experience 2</h5>
-		<h5>Experience 3</h5>
+		<div class="exp">
+			<div class="column">	
+				<img src="Experiences/BLiNQ.png" alt="BLiNQ" height="100" width="300">
+			</div>
+			<div class="column">
+				<h2>Radio Frequency Engineer</h2>
+				<h5>MAY 2020 - AUGUST 2020 | Markham, ON</h5>
+				<img src="Tech/Python.png" alt="Python" height="30" width="30">
+				<img src="Tech/Electrical.png" alt="Electrical" height="30" width="30">
+			</div>
+			<div class="column">
+				<p><span id="less4"></span><span id="more4">
+				• Modified existing production test stations to support new radio frequency modules introduced<br>
+				• Used Python to develop and maintain production test applications for newly added radio frequency modules<br>
+				• Analyzed and created production test reports on released products and found ways to improve test yield and test time<br>
+				• Tested support for prototype radiofrequency modules</p></span>
+				<button onclick="More('blk4', 'less4', 'more4', 'Read')" id="blk4">Read More</button>
+			</div>
+		</div>
+		<div class="exp">
+			<div class="column">
+				<img src="Experiences/Hatch.jpg" alt="Hatch" height="100" width="300">
+			</div>
+			<div class="column">
+				<h2>Electrical Rail and Transit Engineer</h2>
+				<h5>MAY 2019 - APRIL 2020 | Mississauga, ON</h5>
+				<img src="Tech/AutoCAD.png" alt="AutoCAD" height="30" width="30">
+				<img src="Tech/Captivate.png" alt="Captivate" height="30" width="30">
+				<img src="Tech/Excel.png" alt="Excel" height="30" width="30">
+				<img src="Tech/Word.png" alt="Word" height="30" width="30">
+				<img src="Tech/Powerpoint.jpg" alt="Powerpoint" height="30" width="30">
+			</div>
+			<div class="column">
+				<p><span id="less5"></span><span id="more5">
+				• Worked on AutoCAD detailed design and drafting of signals systems for Ontario Northland Railway and Metrolinx as well
+as designing signal equipment room layouts for Ottawa’s Confederation Line Extension project <br>
+				• Performed engineering calculations with regards to grade crossing design and breaking analysis<br>
+				• Provided testing support for commissioning of Canadian Air Transport Security Authority’s Smart Lane security systems<br>
+				• Designed training modules using Adobe Captivate by conducting research and coordinating with a team of engineers<br>
+				• Assisted team leads with project management duties by using Microsoft Excel to create effective spreadsheets, forms,
+and databases to input, track, store, and retrieve data 
+				• Assisted in the preparation of technical documents and presentation materials</p></span>
+				<button onclick="More('blk5', 'less5', 'more5', 'Read')" id="blk5">Read More</button>
+			</div>
+		</div>
+		<div class="exp">
+			<div class="column">
+				<img src="Experiences/solarcar.jpg" alt="SolarCar" height="100" width="300">
+			</div>
+			<div class="column">
+				<h2>Electrical (Software) Team Member</h2>
+				<h5>SEPTEMBER 2017 - APRIL 2019 | Hamilton, ON</h5>
+				<img src="Tech/Arduino.jpg" alt="Arduino" height="30" width="30">
+				<img src="Tech/MPLab.png" alt="MPLab" height="30" width="30">
+				<img src="Tech/C.png" alt="C" height="30" width="30">
+				<img src="Tech/Electrical.png" alt="Electrical" height="30" width="30">
+			</div>
+			<div class="column">
+				<p><span id="less7"></span><span id="more7">
+				• Designed and built circuits that were used to activate solar cells to power a car</br>
+				• Worked with Arduino and Pickit chips with MPLab to program solar cells and display screens that are used for the car</p></span>
+				<button onclick="More('blk7', 'less7', 'more7', 'Read')" id="blk7">Read More</button>
+			</div>
+		</div>
+		<span id="less_exp"></span><span id="more_exp">
+		<div class="exp">
+			<div class="column">
+				<img src="Experiences/Baja.png" alt="Baja" height="100" width="300">
+			</div>
+			<div class="column">
+				<h2>Controls Team Member</h2>
+				<h5>SEPTEMBER 2018 - APRIL 2019 | Hamilton, ON</h5>
+				<img src="Tech/SolidWorks.png" alt="SolidWorks" height="30" width="30">
+				<img src="Tech/Machine.jpg" alt="Machine" height="30" width="30">
+			</div>
+			<div class="column">
+				<p><span id="less6"></span><span id="more6">
+				• Designed and built control mechanisms for a Baja Race car such as the steering wheel and braking system using SolidWorks<br>
+				• Designed a mechanism that follows BAJA SAE competition rules and efficiently mounts a throttle cable to the engine<br>
+				• Constructed car parts in a machine shop using various metal and wood working tools such as bandsaws and milling machines</p></span>
+				<button onclick="More('blk6', 'less6', 'more6', 'Read')" id="blk6">Read More</button>
+			</div>
+		</div>
+		<div class="exp">
+			<div class="column">
+				<img src="Experiences/Makers.png" alt="Makers" height="100" width="300">
+			</div>
+			<div class="column">
+				<h2>Project Developer</h2>
+				<h5>SEPTEMBER 2017 - APRIL 2019 | Hamilton, ON</h5>
+				<img src="Tech/Solder.jpg" alt="Solder" height="30" width="30">
+				<img src="Tech/Electrical.png" alt="Captivate" height="30" width="30">
+			</div>
+			<div class="column">
+				<p><span id="less8"></span><span id="more8">
+				• Worked with a team of developers to design and create small devices using engineering tools such as soldering irons, circuit boards, and laser engraving machines<br>
+				• Planned and executed workshops to teach students how to use engineering tools to create devices<br>
+				• Worked on projects in an efficient manner to meet deadlines while also troubleshooting problems with made devices</p></span>
+				<button onclick="More('blk8', 'less8', 'more8')" id="blk8">Read More</button>
+			</div>
+		</div>
+		</span><button onclick="More('blk_exp', 'less_exp', 'more_exp', 'See')" id="blk_exp">See More</button>
 	</div>
 </div>
+
+<script>
+function More(btn, lnum, mnum, txt) {
+	var less = document.getElementById(lnum);
+	var more = document.getElementById(mnum);
+	var btnText = document.getElementById(btn);
+				
+	if (less.style.display === "none") {
+		less.style.display = "inline";
+		btnText.innerHTML = txt+" more";
+		more.style.display = "none";
+	} else {
+		less.style.display = "none";
+		btnText.innerHTML = txt+" less";
+		more.style.display = "inline";
+	}
+}
+</script>
 
 </body>
 </html>

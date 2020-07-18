@@ -1,323 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<link rel="shortcut icon" type="image/x-icon" href="Projects/Website.png" />
-<title>Sayon Kathirgamanathan</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-/* Ensure proper sizing */
-* {
-	box-sizing: border-box;
-}
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="logo.svg">
+		<title>Sayon Kathirgamanathan</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+		<script src="bootstrap-4.5.0-dist/js/jquery-3.5.1.min.js"></script>
+		<script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+		<script src="https://kit.fontawesome.com/9a5724aaa7.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
 
-body {
-	font-family: Arial, Helvetica, sans-serif;
-	margin: 0;
-}
+		<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+			<!-- Brand/logo -->
+			<a class="navbar-brand" href="Website.html">
+				<img src="logo.svg" alt="logo" style="width:40px;">
+			</a>
 
-/* Style the header */
-.header {
-	padding: 80px; /* some padding */
-	text-align: center; /* center the text */
-	background: #1abc9c; /* green background */
-	color: white; /* white text color */
-}
-/* Increase the font size of the h1 element */
-.header h1 {
-	font-size: 40px;
-}
+			<u1 class="navbar-nav">
+				<li class="nav-item">
+					<h5 class="display-5">Sayon Kathirgamanathan</h5>
+				</li>
+			</u1>
 
-/* Style the top navigation bar */
-.navbar {
-	overflow: hidden; /* Hide overflow */
-	background-color: #333; /* Dark background color */
-}
+			<u1 class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="https://www.linkedin.com/in/sayon-kathirgamanathan/" target="_blank">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://github.com/sayonk" target="_blank">
+						<i class="fa fa-github" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Sayon_Kathirgamanathan.pdf" target="_blank">
+						<i class="fa fa-file-text-o" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="mailto:sayon.mk@gmail.com" target="_blank" class="right">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					</a>
+				</li>
+			</u1>
+		</nav>
 
-/* Style the navigation bar links */
-.navbar a {
-	float: left; /* Make sure that the links stay side-by-side */
-	display: block; /* Change the display to block, for responsive reasons (see below) */
-	color: white; /* White text color */
-	text-align: center; /* Center the text */
-	padding: 14px 20px; /* Add some padding */
-	text-decoration: none; /* Remove underline */
-}
+		<div id="slide" class="carousel slide" data-ride="carousel">
 
-/* Right-aligned link */
-.navbar a.right {
-	float: right; /* Float a link to the right */
-}
+		  <!-- Indicators -->
+		  <ul class="carousel-indicators">
+		    <li data-target="#slide" data-slide-to="0" class="active"></li>
+		    <li data-target="#slide" data-slide-to="1"></li>
+		    <li data-target="#slide" data-slide-to="2"></li>
+				<li data-target="#slide" data-slide-to="3"></li>
+		  </ul>
 
-/* Change color on hover/mouse-over */
-.navbar a:hover {
-	background-color: #ddd; /* Grey background color */
-	color: black; /* Black text color */
-}
+		  <!-- The slideshow -->
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="Carousel/Carousel1.jpg" alt="Me" class="img-fluid" height="auto">
+					<div class="carousel-content">
+						<h1 class="display-1">I'm Sayon</h1>
+					</div>
+					<div class="carousel-caption">
+						<p class="display-6">This is who I am.</p>
+					</div>
+		    </div>
+		    <div class="carousel-item">
+		      <img src="Carousel/Carousel2.jpg" alt="Mountains" class="img-fluid" height="auto">
+					<div class="carousel-content">
+						<h1 class="display-1">Skills</h1>
+					</div>
+					<div class="carousel-caption">
+						<p class="display-6">
+							<a href="#skills">This is what I can do.</a>
+						</p>
+					</div>
+		    </div>
+		    <div class="carousel-item">
+		      <img src="Carousel/Carousel3.jpg" alt="Chess" class="img-fluid" height="auto">
+					<div class="carousel-content">
+						<h1 class="display-1">Projects</h1>
+					</div>
+					<div class="carousel-caption">
+						<p class="display-6">
+							<a href="#projects">This is what I've done.</a>
+						</p>
+					</div>
+		    </div>
+				<div class="carousel-item">
+		      <img src="Carousel/Carousel4.jpg" alt="Chess" class="img-fluid" height="auto">
+					<div class="carousel-content">
+						<h1 class="display-1">Experience</h1>
+					</div>
+					<div class="carousel-caption">
+						<p class="display-6">
+							<a href="#experience">This is where I've done it.</a>
+						</p>
+					</div>
+		    </div>
+		  </div>
 
-/* Column container */
-.row {
-	display: flex;
-	flex-wrap: wrap;
-}
+		  <!-- Left and right controls -->
+		  <a class="carousel-control-prev" href="#slide" data-slide="prev">
+		    <span class="carousel-control-prev-icon"></span>
+		  </a>
+		  <a class="carousel-control-next" href="#slide" data-slide="next">
+		    <span class="carousel-control-next-icon"></span>
+		  </a>
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-	flex: 30%; /* Set the width of the sidebar */
-	background-color: #f1f1f1; /* Grey background color */
-	padding: 20px; /* Some padding */
-}
+		</div>
 
-/* Main column */
-.main {
-	flex: 70%; /* Set the width of the main content */
-	background-color: white; /* White background color */
-	padding: 20px; /* Some padding */
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-	.row {
-		flex-direction: column;
-	}
-	.exp {
-		flex-direciton: column;
-	}
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-	.navbar a {
-		float: none;
-		width:100%;
-	}
-}
-
-/* Experience/Projects blocks */
-.exp {
-	padding: 30px; /* some padding */
-	background: #1abc9c; /* green background */
-	display: flex;
-	flex-wrap: wrap;
-	margin-bottom: 20px;
-}
-
-/* Experience/Project Columns */
-.column {
-	margin-right: 30px;
-}
-
-#more1 {display: none;}
-#more2 {display: none;}
-#more3 {display: none;}
-#more4 {display: none;}
-#more5 {display: none;}
-#more6 {display: none;}
-#more7 {display: none;}
-#more8 {display: none;}
-#more_exp {display: none;}
-	
-</style>
-</head>
-<body>
-
-<div class ="header">
-	<h1>SAYON KATHIRGAMANATHAN</h1>
-	<p>Curiosity. Engineering. Innovation.</p>
-</div>
-
-<div class="navbar">
-	<a href="https://www.linkedin.com/in/sayon-kathirgamanathan/" target="_blank">LinkedIn</a>
-	<a href="https://github.com/sayonk" target="_blank">Github</a>
-	<a href="Sayon_Kathirgamanathan.pdf" target="_blank">Resume</a>
-	<a href="mailto:sayon.mk@gmail.com" target="_blank" class="right">Email</a>
-</div>
-
-<div class="row">
-	<div class="side">
-		<h2>About me</h2>
-		<h5>Hello World!</h5>
-		<img src="Portrait.jpg" alt="Portrait" height="400">
-	</div>
-	<div class="main">
-		<h2>PROJECTS</h2>
-		<div class="exp">
-			<div class="column">	
-				<img src="Projects/AddIt.png" alt="AddIt" height="100" width="100">
-			</div>
-			<div class="column">
-				<h2>AddIt</h2>
-				<h5>Andriod Application</h5>
-				<img src="Tech/Andriod.jpg" alt="Andriod" height="30" width="30">
-				<img src="Tech/Java.png" alt="Java" height="30" width="30">
-			</div>
-			<div class="column">	
-				<p><span id="less1"></span><span id="more1">
-				• Supports calculations for Math, Physics, Chemistry, and Statistics<br>
-				• Provides formulas for a range of disciplines<br>
-				• Pulls data from online sources for accurate results</p></span>
-				<button onclick="More('blk1', 'less1', 'more1', 'Read')" id="blk1">Read More</button>
+		<div class="row" id="skills">
+		</div>
+		<div class="row">
+			<div class="shadow container-lg p-3 my-3 border">
+				<h2>
+					<i class="fa fa-cogs" aria-hidden="true"></i>
+					SKILLS
+				</h2>
 			</div>
 		</div>
-		<div class="exp">
-			<div class="column">	
-				<img src="Projects/Games.png" alt="Games" height="100" width="100">
-			</div>
-			<div class="column">
-				<h2>Board Games</h2>
-				<h5>Python Application</h5>
-				<img src="Tech/Python.png" alt="Python" height="30" width="30">
-			</div>
-			<div class="column">
-				<p><span id="less2"></span><span id="more2">			
-				• Allows user to play against the computer in Tic-Tac-Toe, Connect 4, Scrabble, Checkers, and Chess<br>
-				• Uses a unique AI for each game to determine the best possible move<br>
-				• Allows user to input a random game setup and calculates what the best possible move would be<br>
-				• Chess AI learns using a log of played games from online sources<br></span>
-				<button onclick="More('blk2', 'less2', 'more2', 'Read')" id="blk2">Read More</button>
-			</div>
-		</div>
-		<div class="exp">
-			<div class="column">	
-				<img src="Projects/Website.png" alt="Website" height="100" width="100">
-			</div>
-			<div class="column">
-				<h2>Personal Website</h2>
-				<h5>Web Application</h5>
-				<img src="Tech/HTMLJSCSS.png" alt="HTMLCSS" height="30" width="90">
-			</div>
-			<div class="column">
-				<p><span id="less3"></span><span id="more3">	
-				• Showcases skills, experiences, and projects<br>
-				• Includes links to contact information</p></span>
-				<button onclick="More('blk3', 'less3', 'more3', 'Read')" id="blk3">Read More</button>
-			</div>
-		</div>
-		<h2>EXPERIENCE</h2>
-		<div class="exp">
-			<div class="column">	
-				<img src="Experiences/BLiNQ.png" alt="BLiNQ" height="100" width="300">
-			</div>
-			<div class="column">
-				<h2>Radio Frequency Engineer</h2>
-				<h5>MAY 2020 - AUGUST 2020 | Markham, ON</h5>
-				<img src="Tech/Python.png" alt="Python" height="30" width="30">
-				<img src="Tech/Electrical.png" alt="Electrical" height="30" width="30">
-			</div>
-			<div class="column">
-				<p><span id="less4"></span><span id="more4">
-				• Modified existing production test stations to support new radio frequency modules introduced<br>
-				• Used Python to develop and maintain production test applications for newly added radio frequency modules<br>
-				• Analyzed and created production test reports on released products and found ways to improve test yield and test time<br>
-				• Tested support for prototype radiofrequency modules</p></span>
-				<button onclick="More('blk4', 'less4', 'more4', 'Read')" id="blk4">Read More</button>
-			</div>
-		</div>
-		<div class="exp">
-			<div class="column">
-				<img src="Experiences/Hatch.jpg" alt="Hatch" height="100" width="300">
-			</div>
-			<div class="column">
-				<h2>Electrical Rail and Transit Engineer</h2>
-				<h5>MAY 2019 - APRIL 2020 | Mississauga, ON</h5>
-				<img src="Tech/AutoCAD.png" alt="AutoCAD" height="30" width="30">
-				<img src="Tech/Captivate.png" alt="Captivate" height="30" width="30">
-				<img src="Tech/Excel.png" alt="Excel" height="30" width="30">
-				<img src="Tech/Word.png" alt="Word" height="30" width="30">
-				<img src="Tech/Powerpoint.jpg" alt="Powerpoint" height="30" width="30">
-			</div>
-			<div class="column">
-				<p><span id="less5"></span><span id="more5">
-				• Worked on AutoCAD detailed design and drafting of signals systems for Ontario Northland Railway and Metrolinx as well
-as designing signal equipment room layouts for Ottawa’s Confederation Line Extension project <br>
-				• Performed engineering calculations with regards to grade crossing design and breaking analysis<br>
-				• Provided testing support for commissioning of Canadian Air Transport Security Authority’s Smart Lane security systems<br>
-				• Designed training modules using Adobe Captivate by conducting research and coordinating with a team of engineers<br>
-				• Assisted team leads with project management duties by using Microsoft Excel to create effective spreadsheets, forms,
-and databases to input, track, store, and retrieve data 
-				• Assisted in the preparation of technical documents and presentation materials</p></span>
-				<button onclick="More('blk5', 'less5', 'more5', 'Read')" id="blk5">Read More</button>
-			</div>
-		</div>
-		<div class="exp">
-			<div class="column">
-				<img src="Experiences/solarcar.jpg" alt="SolarCar" height="100" width="300">
-			</div>
-			<div class="column">
-				<h2>Electrical (Software) Team Member</h2>
-				<h5>SEPTEMBER 2017 - APRIL 2019 | Hamilton, ON</h5>
-				<img src="Tech/Arduino.jpg" alt="Arduino" height="30" width="30">
-				<img src="Tech/MPLab.png" alt="MPLab" height="30" width="30">
-				<img src="Tech/C.png" alt="C" height="30" width="30">
-				<img src="Tech/Electrical.png" alt="Electrical" height="30" width="30">
-			</div>
-			<div class="column">
-				<p><span id="less7"></span><span id="more7">
-				• Designed and built circuits that were used to activate solar cells to power a car</br>
-				• Worked with Arduino and Pickit chips with MPLab to program solar cells and display screens that are used for the car</p></span>
-				<button onclick="More('blk7', 'less7', 'more7', 'Read')" id="blk7">Read More</button>
-			</div>
-		</div>
-		<span id="less_exp"></span><span id="more_exp">
-		<div class="exp">
-			<div class="column">
-				<img src="Experiences/Baja.png" alt="Baja" height="100" width="300">
-			</div>
-			<div class="column">
-				<h2>Controls Team Member</h2>
-				<h5>SEPTEMBER 2018 - APRIL 2019 | Hamilton, ON</h5>
-				<img src="Tech/SolidWorks.png" alt="SolidWorks" height="30" width="30">
-				<img src="Tech/Machine.jpg" alt="Machine" height="30" width="30">
-			</div>
-			<div class="column">
-				<p><span id="less6"></span><span id="more6">
-				• Designed and built control mechanisms for a Baja Race car such as the steering wheel and braking system using SolidWorks<br>
-				• Designed a mechanism that follows BAJA SAE competition rules and efficiently mounts a throttle cable to the engine<br>
-				• Constructed car parts in a machine shop using various metal and wood working tools such as bandsaws and milling machines</p></span>
-				<button onclick="More('blk6', 'less6', 'more6', 'Read')" id="blk6">Read More</button>
-			</div>
-		</div>
-		<div class="exp">
-			<div class="column">
-				<img src="Experiences/Makers.png" alt="Makers" height="100" width="300">
-			</div>
-			<div class="column">
-				<h2>Project Developer</h2>
-				<h5>SEPTEMBER 2017 - APRIL 2019 | Hamilton, ON</h5>
-				<img src="Tech/Solder.jpg" alt="Solder" height="30" width="30">
-				<img src="Tech/Electrical.png" alt="Captivate" height="30" width="30">
-			</div>
-			<div class="column">
-				<p><span id="less8"></span><span id="more8">
-				• Worked with a team of developers to design and create small devices using engineering tools such as soldering irons, circuit boards, and laser engraving machines<br>
-				• Planned and executed workshops to teach students how to use engineering tools to create devices<br>
-				• Worked on projects in an efficient manner to meet deadlines while also troubleshooting problems with made devices</p></span>
-				<button onclick="More('blk8', 'less8', 'more8')" id="blk8">Read More</button>
-			</div>
-		</div>
-		</span><button onclick="More('blk_exp', 'less_exp', 'more_exp', 'See')" id="blk_exp">See More</button>
-	</div>
-</div>
 
-<script>
-function More(btn, lnum, mnum, txt) {
-	var less = document.getElementById(lnum);
-	var more = document.getElementById(mnum);
-	var btnText = document.getElementById(btn);
-				
-	if (less.style.display === "none") {
-		less.style.display = "inline";
-		btnText.innerHTML = txt+" more";
-		more.style.display = "none";
-	} else {
-		less.style.display = "none";
-		btnText.innerHTML = txt+" less";
-		more.style.display = "inline";
-	}
-}
-</script>
+		<div class="shadow container p-3 my-3 border">
+			<div class="row">
+				<div class="col-lg-4">
+					<h3>Java</h3>
+				</div>
 
-</body>
+				<div class="col-lg-6">
+					<div class="progress">
+						<div class="progress-bar" style="width:80%"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4">
+					<h3>Python</h3>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="progress">
+						<div class="progress-bar" style="width:90%"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4">
+					<h3>C/C++</h3>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="progress">
+						<div class="progress-bar" style="width:70%"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4">
+					<h3>HTML/CSS/JavaScript</h3>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="progress">
+						<div class="progress-bar" style="width:50%"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4">
+					<h3>AutoCAD</h3>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="progress">
+						<div class="progress-bar" style="width:80%"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row"  id="projects">
+		</div>
+		<div class="row">
+			<div class="shadow container-lg p-3 my-3 border">
+				<h2>
+					<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+					PROJECTS
+				</h2>
+			</div>
+		</div>
+
+		<div class="shadow container p-3 my-3 border">
+			<div class="row">
+				<div class="col-lg-2">
+					<img src="Projects/AddIt.png" class="img-thumbnail" alt="AddIt">
+				</div>
+
+				<div class="col-lg-4">
+					<h2>AddIt</h2>
+					<h5>Andriod Application</h5>
+					<img src="Tech/Andriod.jpg" class="img-thumbnail" alt="Andriod" height="30" width="30">
+					<img src="Tech/Java.png" class="img-thumbnail" alt="Java" height="30" width="30">
+				</div>
+
+				<div class="col-lg-6">
+					<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#more1">Read More</button>
+					<div id="more1" class="collapse">
+						• Supports calculations for Math, Physics, Chemistry, and Statistics<br>
+						• Provides formulas for a range of disciplines<br>
+						• Pulls data from online sources for accurate results
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="shadow container p-3 my-3 border">
+			<div class="row">
+				<div class="col-lg-2">
+					<img src="Projects/Games.png" class="img-thumbnail" alt="Games">
+				</div>
+
+				<div class="col-lg-4">
+					<h2>Board Games</h2>
+					<h5>Python Application</h5>
+					<img src="Tech/Python.png" class="img-thumbnail" alt="Python" height="30" width="30">
+				</div>
+
+				<div class="col-lg-6">
+					<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#more2">Read More</button>
+					<div id="more2" class="collapse">
+						• Allows user to play against the computer in Tic-Tac-Toe, Connect 4, Scrabble, Checkers, and Chess<br>
+						• Uses a unique AI for each game to determine the best possible move<br>
+						• Allows user to input a random game setup and calculates what the best possible move would be<br>
+						• Chess AI learns using a log of played games from online sources<br>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="shadow container p-3 my-3 border">
+			<div class="row">
+				<div class="col-lg-2">
+					<img src="Projects/Website.png" class="img-thumbnail" alt="Website">
+				</div>
+
+				<div class="col-lg-4">
+					<h2>Personal Website</h2>
+					<h5>Web Application</h5>
+					<img src="Tech/HTMLJSCSS.png" class="img-thumbnail" alt="HTMLCSS" height="30" width="90">
+				</div>
+
+				<div class="col-lg-6">
+					<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#more3">Read More</button>
+					<div id="more3" class="collapse">
+						• Showcases skills, experiences, and projects<br>
+						• Includes links to contact information</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" id="experience">
+		</div>
+		<div class="row">
+			<div class="shadow container-lg p-3 my-3 border">
+				<h2>
+					<i class="fa fa-globe" aria-hidden="true"></i>
+					EXPERIENCE
+				</h2>
+			</div>
+		</div>
+
+		<div class="shadow container p-3 my-3 border">
+			<div class="row">
+				<div class="col-lg-2">
+					<img src="Experiences/BLiNQ.png" class="img-thumbnail" alt="BLiNQ">
+				</div>
+
+				<div class="col-lg-4">
+					<h2>Radio Frequency Engineer</h2>
+					<h5>MAY 2020 - AUGUST 2020 | Markham, ON</h5>
+					<img src="Tech/Python.png" class="img-thumbnail" alt="Python" height="30" width="30">
+					<img src="Tech/Electrical.png" class="img-thumbnail" alt="Electrical" height="30" width="30">
+					<img src="Tech/Solder.jpg" class="img-thumbnail" alt="Solder" height="30" width="30">
+				</div>
+
+				<div class="col-lg-6">
+					<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#more4">Read More</button>
+					<div id="more4" class="collapse">
+						• Modified existing production test stations to support new radio frequency modules introduced<br>
+						• Used Python to develop and maintain production test applications for newly added radio frequency modules<br>
+						• Analyzed and created production test reports on released products and found ways to improve test yield and test time<br>
+						• Tested support for prototype radiofrequency modules</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="shadow container p-3 my-3 border">
+			<div class= "row">
+				<div class="col-lg-2">
+					<img src="Experiences/Hatch.jpg" class="img-thumbnail" alt="Hatch">
+				</div>
+
+				<div class="col-lg-4">
+					<h2>Electrical Rail and Transit Engineer</h2>
+					<h5>MAY 2019 - APRIL 2020 | Mississauga, ON</h5>
+					<img src="Tech/AutoCAD.png" class="img-thumbnail" alt="AutoCAD" height="30" width="30">
+					<img src="Tech/Captivate.png" class="img-thumbnail" alt="Captivate" height="30" width="30">
+					<img src="Tech/Excel.png" class="img-thumbnail" alt="Excel" height="30" width="30">
+					<img src="Tech/Word.png" class="img-thumbnail" alt="Word" height="30" width="30">
+					<img src="Tech/Powerpoint.jpg" class="img-thumbnail" alt="Powerpoint" height="30" width="30">
+				</div>
+
+				<div class="col-lg-6">
+					<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#more5">Read More</button>
+					<div id="more5" class="collapse">
+						• Worked on AutoCAD detailed design and drafting of signals systems for Ontario Northland Railway and Metrolinx as well
+			as designing signal equipment room layouts for Ottawa’s Confederation Line Extension project <br>
+						• Performed engineering calculations with regards to grade crossing design and breaking analysis<br>
+						• Provided testing support for commissioning of Canadian Air Transport Security Authority’s Smart Lane security systems<br>
+						• Designed training modules using Adobe Captivate by conducting research and coordinating with a team of engineers<br>
+						• Assisted team leads with project management duties by using Microsoft Excel to create effective spreadsheets, forms,
+			and databases to input, track, store, and retrieve data
+						• Assisted in the preparation of technical documents and presentation materials</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="shadow container p-3 my-3 border">
+			<div class="row">
+				<div class="col-lg-2">
+					<img src="Experiences/solarcar.jpg" class="img-thumbnail" alt="SolarCar">
+				</div>
+
+				<div class="col-lg-4">
+					<h2>Electrical (Software) Team Member</h2>
+					<h5>SEPTEMBER 2017 - APRIL 2019 | Hamilton, ON</h5>
+					<img src="Tech/Arduino.jpg" class="img-thumbnail" alt="Arduino" height="30" width="30">
+					<img src="Tech/MPLab.png" class="img-thumbnail" alt="MPLab" height="30" width="30">
+					<img src="Tech/C.png" class="img-thumbnail" alt="C" height="30" width="30">
+					<img src="Tech/Electrical.png" class="img-thumbnail" alt="Electrical" height="30" width="30">
+				</div>
+
+				<div class="col-lg-6">
+					<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#more6">Read More</button>
+					<div id="more6" class="collapse">
+						• Designed and built circuits that were used to activate solar cells to power a car</br>
+						• Worked with Arduino and Pickit chips with MPLab to program solar cells and display screens that are used for the car</p>
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="shadow container p-3 my-3 border">
+			<div class="row">
+				<div class="col-lg-2">
+					<img src="Experiences/Baja.png" class="img-thumbnail" alt="Baja">
+				</div>
+
+				<div class="col-lg-4">
+					<h2>Controls Team Member</h2>
+					<h5>SEPTEMBER 2018 - APRIL 2019 | Hamilton, ON</h5>
+					<img src="Tech/SolidWorks.png" class="img-thumbnail" alt="SolidWorks" height="30" width="30">
+					<img src="Tech/Machine.jpg" class="img-thumbnail" alt="Machine" height="30" width="30">
+				</div>
+
+				<div class="col-lg-6">
+					<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#more7">Read More</button>
+					<div id="more7" class="collapse">
+						• Designed and built control mechanisms for a Baja Race car such as the steering wheel and braking system using SolidWorks<br>
+						• Designed a mechanism that follows BAJA SAE competition rules and efficiently mounts a throttle cable to the engine<br>
+						• Constructed car parts in a machine shop using various metal and wood working tools such as bandsaws and milling machines</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="shadow container p-3 my-3 border">
+			<div class="row">
+				<div class="col-lg-2">
+					<img src="Experiences/Makers.png" class="img-thumbnail" alt="Makers">
+				</div>
+
+				<div class="col-lg-4">
+					<h2>Project Developer</h2>
+					<h5>SEPTEMBER 2017 - APRIL 2019 | Hamilton, ON</h5>
+					<img src="Tech/Solder.jpg" class="img-thumbnail" alt="Solder" height="30" width="30">
+					<img src="Tech/Electrical.png" class="img-thumbnail" alt="Electrical" height="30" width="30">
+				</div>
+
+				<div class="col-lg-6">
+					<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#more8">Read More</button>
+					<div id="more8" class="collapse">
+						• Worked with a team of developers to design and create small devices using engineering tools such as soldering irons, circuit boards, and laser engraving machines<br>
+						• Planned and executed workshops to teach students how to use engineering tools to create devices<br>
+						• Worked on projects in an efficient manner to meet deadlines while also troubleshooting problems with made devices
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script
+		src="Website.js">
+		</script>
+
+	</body>
 </html>
-

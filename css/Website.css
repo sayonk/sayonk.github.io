@@ -1,0 +1,123 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+
+svg {
+    width: 100%;
+    display: block;
+}
+
+.wrapper1 {
+    position: relative;
+    width: 210px;
+    height: 210px;
+}
+
+.wrapper1 > #bar, .wrapper1 > img {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+}
+
+.wrapper1 > img {
+    /* Needs appropriate vendor prefixes */
+    box-sizing: border-box;
+
+    /* This needs to be equal to strokeWidth */
+    padding: 4%;
+}
+
+.wrapper2 {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.wrapper2 > #bar, .wrapper2 > img {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+}
+
+.wrapper2 > img {
+    /* Needs appropriate vendor prefixes */
+    box-sizing: border-box;
+
+    /* This needs to be equal to strokeWidth */
+    padding: 4%;
+}
+
+.wrapper3 {
+    position: relative;
+    width: 180px;
+    height: 180px;
+}
+
+.wrapper3 > #bar, .wrapper3 > img {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+}
+
+.wrapper3 > img {
+    /* Needs appropriate vendor prefixes */
+    box-sizing: border-box;
+
+    /* This needs to be equal to strokeWidth */
+    padding: 4%;
+}
+
+.wrapper4 {
+    position: relative;
+    width: 130px;
+    height: 130px;
+}
+
+.wrapper4 > #bar, .wrapper4 > img {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+}
+
+.wrapper4 > img {
+    /* Needs appropriate vendor prefixes */
+    box-sizing: border-box;
+
+    /* This needs to be equal to strokeWidth */
+    padding: 4%;
+}
+
+.wrapper5 {
+    position: relative;
+    width: 240px;
+    height: 240px;
+}
+
+.wrapper5 > #bar, .wrapper5 > img {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+}
+
+.wrapper5 > img {
+    /* Needs appropriate vendor prefixes */
+    box-sizing: border-box;
+
+    /* This needs to be equal to strokeWidth */
+    padding: 4%;
+}
+
+.sliderBar-progress {
+    background:rgb(0, 255, 0);
+}

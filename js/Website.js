@@ -1,158 +1,168 @@
-function getColour(c1,c2,pct) {
-  var r = Math.ceil(parseInt(c1.substring(0,2), 16) * pct + parseInt(c2.substring(0,2), 16) * (1-pct));
-  var g = Math.ceil(parseInt(c1.substring(2,4), 16) * pct + parseInt(c2.substring(2,4), 16) * (1-pct));
-  var b = Math.ceil(parseInt(c1.substring(4,6), 16) * pct + parseInt(c2.substring(4,6), 16) * (1-pct));
+var p1, p2, p3, p4, p5;
 
-  r = r.toString(16);
-  g = g.toString(16);
-  b = b.toString(16);
-
-  new_r = (r.length == 1) ? '0' + r : r;
-  new_g = (g.length == 1) ? '0' + g : g;
-  new_b = (b.length == 1) ? '0' + b : b;
-
-  return '#' + new_r + new_g + new_b
-}
-
-function getC(c1,c2,pct) {
-  return c2
-}
-
-window.onload = function onLoad() {
-
-  document.getElementById("btn1").value = "Read More";
-  document.getElementById("btn2").value = "Read More";
-  document.getElementById("btn3").value = "Read More";
-  document.getElementById("btn4").value = "Read More";
-  document.getElementById("btn5").value = "Read More";
-  document.getElementById("btn6").value = "Read More";
-  document.getElementById("btn7").value = "Read More";
-  document.getElementById("btn8").value = "Read More";
-
-  var pct1 = 0.7
-  var circle = new ProgressBar.Circle('#bar1', {
-      strokeWidth: 8,  // This means 4% of the container
-      color: '#000',
-      easing: 'easeInOut',
-      from: { color: '#ff0000'},
-      to: { color: getColour('00ff00','ff0000',pct1)},
-      step: function(state, circle) {
-        circle.path.setAttribute('stroke', state.color);
-      }
-
-  });
-  circle.animate(pct1);
-
-  var pct2 = 0.9
-  var circle = new ProgressBar.Circle('#bar2', {
-      strokeWidth: 8,  // This means 4% of the container
-      color: '#000',
-      easing: 'easeInOut',
-      from: { color: '#ff0000'},
-      to: { color: getColour('00ff00','ff0000',pct2)},
-      step: function(state, circle) {
-        circle.path.setAttribute('stroke', state.color);
-      }
-
-  });
-  circle.animate(pct2);
-
-  var pct3 = 0.7
-  var circle = new ProgressBar.Circle('#bar3', {
-      strokeWidth: 8,  // This means 4% of the container
-      color: '#000',
-      easing: 'easeInOut',
-      from: { color: '#ff0000'},
-      to: { color: getColour('00ff00','ff0000',pct3)},
-      step: function(state, circle) {
-        circle.path.setAttribute('stroke', state.color);
-      }
-
-  });
-  circle.animate(pct3);
-
-  var pct4 = 0.5
-  var circle = new ProgressBar.Circle('#bar4', {
-      strokeWidth: 8,  // This means 4% of the container
-      color: '#000',
-      easing: 'easeInOut',
-      from: { color: '#ff0000'},
-      to: { color: getColour('00ff00','ff0000',pct4)},
-      step: function(state, circle) {
-        circle.path.setAttribute('stroke', state.color);
-      }
-
-  });
-  circle.animate(pct4);
-
-  var pct5 = 0.8
-  var circle = new ProgressBar.Circle('#bar5', {
-      strokeWidth: 8,  // This means 4% of the container
-      color: '#000',
-      easing: 'easeInOut',
-      from: { color: '#ff0000'},
-      to: { color: getColour('00ff00','ff0000',pct5)},
-      step: function(state, circle) {
-        circle.path.setAttribute('stroke', state.color);
-      }
-
-  });
-  circle.animate(pct5);
-
-};
-
-function change1()
+function projinfo(p)
 {
-  var elem = document.getElementById("btn1");
-  if (elem.value=="Read More") elem.value = "Read Less";
-  else elem.value = "Read More";
+
+  var temp = p.id;
+
+  if (temp === "proj1" && document.getElementById("info1").style.opacity !== "1") {
+    document.getElementById("info1").style.opacity = "1";
+    document.getElementById("btn1").style.filter = "brightness(30%)";
+    $(p).addClass('no-hover');
+    document.getElementById("chosen1").style.display = "block";
+    p1 = p;
+  } else {
+    document.getElementById("info1").style.opacity = "0";
+    document.getElementById("btn1").style.filter = "brightness(100%)";
+    $(p1).removeClass('no-hover');
+    document.getElementById("chosen1").style.display = "none";
+  }
+  if (temp === "proj2" && document.getElementById("info2").style.opacity !== "1") {
+    document.getElementById("info2").style.opacity = "1";
+    document.getElementById("btn2").style.filter = "brightness(30%)";
+    $(p).addClass('no-hover');
+    document.getElementById("chosen2").style.display = "block";
+    p2 = p;
+  } else {
+    document.getElementById("info2").style.opacity = "0";
+    document.getElementById("btn2").style.filter = "brightness(100%)";
+    $(p2).removeClass('no-hover');
+    document.getElementById("chosen2").style.display = "none";
+  }
+  if (temp === "proj3" && document.getElementById("info3").style.opacity !== "1") {
+    document.getElementById("info3").style.opacity = "1";
+    document.getElementById("btn3").style.filter = "brightness(30%)";
+    $(p).addClass('no-hover');
+    document.getElementById("chosen3").style.display = "block";
+    p3 = p;
+  } else {
+    document.getElementById("info3").style.opacity = "0";
+    document.getElementById("btn3").style.filter = "brightness(100%)";
+    $(p3).removeClass('no-hover');
+    document.getElementById("chosen3").style.display = "none";
+  }
+  if (temp === "proj4" && document.getElementById("info4").style.opacity !== "1") {
+    document.getElementById("info4").style.opacity = "1";
+    document.getElementById("btn4").style.filter = "brightness(30%)";
+    $(p).addClass('no-hover');
+    document.getElementById("chosen4").style.display = "block";
+    p4 = p;
+  } else {
+    document.getElementById("info4").style.opacity = "0";
+    document.getElementById("btn4").style.filter = "brightness(100%)";
+    $(p4).removeClass('no-hover');
+    document.getElementById("chosen4").style.display = "none";
+  }
+  if (temp === "proj5" && document.getElementById("info5").style.opacity !== "1") {
+    document.getElementById("info5").style.opacity = "1";
+    document.getElementById("btn5").style.filter = "brightness(30%)";
+    $(p).addClass('no-hover');
+    document.getElementById("chosen5").style.display = "block";
+    p5 = p;
+  } else {
+    document.getElementById("info5").style.opacity = "0";
+    document.getElementById("btn5").style.filter = "brightness(100%)";
+    $(p5).removeClass('no-hover');
+    document.getElementById("chosen5").style.display = "none";
+  }
 }
 
-function change2()
+var e1, e2, e3, e4, e5;
+
+function expinfo(e)
 {
-  var elem = document.getElementById("btn2");
-  if (elem.value=="Read More") elem.value = "Read Less";
-  else elem.value = "Read More";
+
+  var temp = e.id;
+
+  if (temp === "exp1" && document.getElementById("info6").style.opacity !== "1") {
+    document.getElementById("info6").style.opacity = "1";
+    document.getElementById("btn6").style.filter = "brightness(30%)";
+    $(e).addClass('no-hover');
+    document.getElementById("chosen6").style.display = "block";
+    e1 = e;
+  } else {
+    document.getElementById("info6").style.opacity = "0";
+    document.getElementById("btn6").style.filter = "brightness(100%)";
+    $(e1).removeClass('no-hover');
+    document.getElementById("chosen6").style.display = "none";
+  }
+  if (temp === "exp2" && document.getElementById("info7").style.opacity !== "1") {
+    document.getElementById("info7").style.opacity = "1";
+    document.getElementById("btn7").style.filter = "brightness(30%)";
+    $(e).addClass('no-hover');
+    document.getElementById("chosen7").style.display = "block";
+    e2 = e;
+  } else {
+    document.getElementById("info7").style.opacity = "0";
+    document.getElementById("btn7").style.filter = "brightness(100%)";
+    $(e2).removeClass('no-hover');
+    document.getElementById("chosen7").style.display = "none";
+  }
+  if (temp === "exp3" && document.getElementById("info8").style.opacity !== "1") {
+    document.getElementById("info8").style.opacity = "1";
+    document.getElementById("btn8").style.filter = "brightness(30%)";
+    $(e).addClass('no-hover');
+    document.getElementById("chosen8").style.display = "block";
+    e3 = e;
+  } else {
+    document.getElementById("info8").style.opacity = "0";
+    document.getElementById("btn8").style.filter = "brightness(100%)";
+    $(e3).removeClass('no-hover');
+    document.getElementById("chosen8").style.display = "none";
+  }
+  if (temp === "exp4" && document.getElementById("info9").style.opacity !== "1") {
+    document.getElementById("info9").style.opacity = "1";
+    document.getElementById("btn9").style.filter = "brightness(30%)";
+    $(e).addClass('no-hover');
+    document.getElementById("chosen9").style.display = "block";
+    e4 = e;
+  } else {
+    document.getElementById("info9").style.opacity = "0";
+    document.getElementById("btn9").style.filter = "brightness(100%)";
+    $(e4).removeClass('no-hover');
+    document.getElementById("chosen9").style.display = "none";
+  }
+  if (temp === "exp5" && document.getElementById("info10").style.opacity !== "1") {
+    document.getElementById("info10").style.opacity = "1";
+    document.getElementById("btn10").style.filter = "brightness(30%)";
+    $(e).addClass('no-hover');
+    document.getElementById("chosen10").style.display = "block";
+    e5 = e;
+  } else {
+    document.getElementById("info10").style.opacity = "0";
+    document.getElementById("btn10").style.filter = "brightness(100%)";
+    $(e5).removeClass('no-hover');
+    document.getElementById("chosen10").style.display = "none";
+  }
 }
 
-function change3()
-{
-  var elem = document.getElementById("btn3");
-  if (elem.value=="Read More") elem.value = "Read Less";
-  else elem.value = "Read More";
-}
 
-function change4()
-{
-  var elem = document.getElementById("btn4");
-  if (elem.value=="Read More") elem.value = "Read Less";
-  else elem.value = "Read More";
-}
+$(window).scroll(function() {
 
-function change5()
-{
-  var elem = document.getElementById("btn5");
-  if (elem.value=="Read More") elem.value = "Read Less";
-  else elem.value = "Read More";
-}
+  var scrollPosition = $(window).scrollTop();
 
-function change6()
-{
-  var elem = document.getElementById("btn6");
-  if (elem.value=="Read More") elem.value = "Read Less";
-  else elem.value = "Read More";
-}
+  var skillsTop = $('#skills').offset().top-51;
+  var projectsTop = $('#projects').offset().top-51;
+  var experienceTop = $('#experience').offset().top-51;
 
-function change7()
-{
-  var elem = document.getElementById("btn7");
-  if (elem.value=="Read More") elem.value = "Read Less";
-  else elem.value = "Read More";
-}
-
-function change8()
-{
-  var elem = document.getElementById("btn8");
-  if (elem.value=="Read More") elem.value = "Read Less";
-  else elem.value = "Read More";
-}
+  if (scrollPosition >= experienceTop) {
+    $('#skills_link').removeClass('active1');
+    $('#projects_link').removeClass('active1');
+    $('#experience_link').addClass('active1');
+  }
+  else if (scrollPosition >= projectsTop) {
+    $('#skills_link').removeClass('active1');
+    $('#experience_link').removeClass('active1');
+    $('#projects_link').addClass('active1');
+  }
+  else if (scrollPosition >= skillsTop) {
+    $('#projects_link').removeClass('active1');
+    $('#experience_link').removeClass('active1');
+    $('#skills_link').addClass('active1');
+  }
+  else {
+    $('#skills_link').removeClass('active1');
+    $('#projects_link').removeClass('active1');
+    $('#experience_link').removeClass('active1');
+  }
+});

@@ -388,6 +388,45 @@ h6 {
     font-weight: 300;
     line-height: 1.2;
 }
+
+@media only screen and (max-width: 630px) {
+  .display-1 {
+      font-size: 17vw;
+      font-weight: 300;
+      line-height: 1.2;
+  }
+  .display-2 {
+      font-size: 5.5vw;
+      font-weight: 300;
+      line-height: 1.2;
+  }
+  .display-3 {
+      font-size: 4.5vw;
+      font-weight: 300;
+      line-height: 1.2;
+  }
+  .display-4 {
+      font-size: 7vw;
+      font-weight: 300;
+      line-height: 1.2;
+  }
+  .display-4-5 {
+      font-size: 3.1vw;
+      font-weight: 300;
+      line-height: 1.2;
+  }
+  .display-5 {
+      font-size: 4vw;
+      font-weight: 300;
+      line-height: 1.2;
+  }
+  .display-6 {
+      font-size: 1vw;
+      font-weight: 300;
+      line-height: 1.2;
+  }
+}
+
 hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -441,7 +480,7 @@ mark {
 .img-thumbnail {
     padding: 0.4vw;
     background-color: #aarrggbb;
-    border: 1px solid #dee2e6;
+    border: 0.1vw solid #dee2e6;
     border-radius: 0.4vw;
     max-width: 100%;
     height: auto;
@@ -2406,7 +2445,7 @@ textarea.form-control.is-invalid {
     -ms-user-select: none;
     user-select: none;
     background-color: transparent;
-    border: 1px solid transparent;
+    border: 0.1vw solid transparent;
     padding: 0.5vw 1vw;
     font-size: 1.3vw;
     line-height: 1.5;
@@ -5866,8 +5905,8 @@ a.close.disabled {
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 2vw;
+    height: 2vw;
     background: no-repeat 50%/100% 100%;
 }
 .carousel-control-prev-icon {
@@ -5895,11 +5934,11 @@ a.close.disabled {
     box-sizing: content-box;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
-    width: 10px;
-    height: 10px;
+    width: 1vw;
+    height: 1vw;
     border-radius: 100%;
-    margin-right: 3px;
-    margin-left: 3px;
+    margin-right: 0.3vw;
+    margin-left: 0.3vw;
     text-indent: -999px;
     cursor: pointer;
     background-color: #fff;
@@ -9293,5 +9332,55 @@ a.text-dark:hover {
         color: inherit;
         border-color: #dee2e6;
     }
+}
+
+@media only screen and (max-width: 630px) {
+  .display-1 {
+      font-size: 17vw;
+      font-weight: 300;
+      line-height: 1.2;
+  }
+  .display-2 {
+      font-size: 5.5vw;
+      font-weight: 300;
+      line-height: 1.2;
+  }
+  .display-4-5 {
+      font-size: 5vw;
+      font-weight: 300;
+      line-height: 1.2;
+  }
+  .display-5 {
+      font-size: 4vw;
+      font-weight: 300;
+      line-height: 1.2;
+  }
+  .display-6 {
+      font-size: 2vw;
+      font-weight: 300;
+      line-height: 1.2;
+  }
+
+  .progress {
+      height: 2.5vw;
+      font-size: 2.3vw;
+      border-radius: 1.5vw;
+  }
+
+  .btn-clear {
+      font-size: 2vw;
+      width: 15vw;
+  }
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+      width: 4vw;
+      height: 4vw;
+  }
+
+  .carousel-indicators li {
+      width: 2vw;
+      height: 2vw;
+  }
 }
 /*# sourceMappingURL=bootstrap.min.css.map */

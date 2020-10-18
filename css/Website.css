@@ -88,8 +88,8 @@ html {
 
 .me {
   position: absolute;
-  top: 28%;
-  left: 24%;
+  top: 22%;
+  left: 17%;
 }
 
 .social-btns {
@@ -390,11 +390,11 @@ html {
 
    .me {
      top: 32%;
-     left: 15%;
+     left: 0%;
    }
 
    .social-btns {
-     top: 47%;
+     top: 54%;
      left: 30%;
    }
 

@@ -222,6 +222,13 @@ html {
   left: 40%;
 }
 
+.learn i {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  font-size: 1.4vw;
+}
+
 .name .mob {
   display: none;
 }
@@ -489,6 +496,13 @@ html {
    .learn {
      top: 88%;
      left: 40%;
+   }
+
+   .learn i {
+     position: absolute;
+     left: 20%;
+     top: 30%;
+     font-size: 2vw;
    }
 
    .name .desk {

@@ -299,8 +299,8 @@ html {
 
 .proj .overlay {
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 26%;
+  left: 26%;
   opacity: 0;
   transition: .4s ease;
   font-size: 7vw;
@@ -329,8 +329,8 @@ html {
 
 .exp .overlay {
   position: absolute;
-  top: 20%;
-  left: 38%;
+  top: 21%;
+  left: 40%;
   opacity: 0;
   transition: .4s ease;
   font-size: 6vw;

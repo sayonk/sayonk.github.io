@@ -132,6 +132,17 @@ function expinfo(e)
     $('#exp5').removeClass('no-hover');
     document.getElementById("echosen5").style.display = "none";
   }
+  if (temp === "exp6" && document.getElementById("einfo6").style.opacity !== "1") {
+    document.getElementById("einfo6").style.opacity = "1";
+    document.getElementById("ebtn6").style.filter = "brightness(30%)";
+    $('#exp6').addClass('no-hover');
+    document.getElementById("echosen6").style.display = "block";
+  } else {
+    document.getElementById("einfo6").style.opacity = "0";
+    document.getElementById("ebtn6").style.filter = "brightness(100%)";
+    $('#exp6').removeClass('no-hover');
+    document.getElementById("echosen6").style.display = "none";
+  }
 }
 
 

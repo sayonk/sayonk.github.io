@@ -92,12 +92,12 @@
 										<i class="fa fa-info-circle fa-6x overlay" id="pinfo2"></i>
 									</div>
 									<div class="proj" type="button" onclick="projinfo(this)" id="proj3">
-										<img src="assets/Projects/Spotlight.png" alt="Spotlight" id="pbtn3">
+										<img src="assets/Projects/SecretSanta.png" alt="Secret Santa" id="pbtn3">
 										<i class="fa fa-info-circle fa-6x overlay" id="pinfo3"></i>
 									</div>
-									<div class="proj" type="button" onclick="projinfo(this)" id="proj5">
-										<img src="assets/Projects/Buddi.png" alt="Buddi" id="pbtn5">
-										<i class="fa fa-info-circle fa-6x overlay" id="pinfo5"></i>
+									<div class="proj" type="button" onclick="projinfo(this)" id="proj4">
+										<img src="assets/Projects/Panam.png" alt="Panam" id="pbtn4">
+										<i class="fa fa-info-circle fa-6x overlay" id="pinfo4"></i>
 									</div>
 								</div>
 							</div>
@@ -105,13 +105,18 @@
 							<div class="carousel-item">
 								<img src="assets/Transparent.png" width=70%>
 								<div class="carousel-content">
-									<div class="proj" type="button" onclick="projinfo(this)" id="proj4">
-										<img src="assets/Projects/Website.png" alt="Website" id="pbtn4">
-										<i class="fa fa-info-circle fa-6x overlay" id="pinfo4"></i>
+									<div class="proj" type="button" onclick="projinfo(this)" id="proj5">
+										<img src="assets/Projects/Website.png" alt="Website" id="pbtn5">
+										<i class="fa fa-info-circle fa-6x overlay" id="pinfo5"></i>
 									</div>
 									<div class="proj" type="button" onclick="projinfo(this)" id="proj6">
-										<img src="assets/Projects/SecretSanta.png" alt="Games" id="pbtn6">
+										<img src="assets/Projects/Spotlight.png" alt="Spotlight" id="pbtn6">
 										<i class="fa fa-info-circle fa-6x overlay" id="pinfo6"></i>
+									</div>
+									<div class="proj" type="button" onclick="projinfo(this)" id="proj6"></div>
+									<div class="proj" type="button" onclick="projinfo(this)" id="proj7">
+										<img src="assets/Projects/Buddi.png" alt="Buddi" id="pbtn7">
+										<i class="fa fa-info-circle fa-6x overlay" id="pinfo7"></i>
 									</div>
 								</div>
 							</div>
@@ -175,30 +180,47 @@
 				</div>
 
 				<div class="projects-chosen img-thumbnail" id="pchosen3">
-					<img src="assets/Projects/Spotlight.png" class="logo" alt="Spotlight">
+					<img src="assets/Projects/SecretSanta.png" class="logo" alt="Secret Santa">
 
 					<div class="name">
-						<p class="display-4">Spotlight</p>
-						<p class="display-5">Web Application</p>
+						<p class="display-4">Secret Santa</p>
+						<p class="display-5">Python Application</p>
 
-						<img src="assets/Tech/Java.png" alt="Java">
-						<img src="assets/Tech/HTML.png" alt="HTML">
-						<img src="assets/Tech/CSS.png" alt="CSS">
-						<img src="assets/Tech/JavaScript.png" alt="JavaScript">
+						<img src="assets/Tech/Python.png" alt="Python">
 					</div>
 
 					<p class="display-6 description">
-						• HackTO 2022 Project - A Job board for Immigrant Women<br>
-						• Connects Immigrant Women, Employers, and Mentors<br>
-						• Front-end designed using Figma and built using REACT
+						• Executes an algorithm developed in Python that generates random pairs of participants, with exclusions considered, that results in a continuous chain<br>
+						• Utilizes Python libraries to implement a seeding method to re-simulate random generation<br>
+						• Includes an email delivery system which accesses an SMTP server to automatically send emails to all participants
 					</p>
 
-					<a href="https://sayon.io/projects/Spotlight" target="_blank" class="btn btn-clear learn">
+					<a href="https://sayon.io/projects/Secret-Santa" target="_blank" class="btn btn-clear learn">
 						<i class="fa fa-github"></i>Github
 					</a>
 				</div>
 
 				<div class="projects-chosen img-thumbnail" id="pchosen4">
+					<img src="assets/Projects/Panam.png" class="logo" alt="Games">
+
+					<div class="name">
+						<p class="display-4-5">Panam Booking Bot</p>
+						<p class="display-5">Python Application</p>
+
+						<img src="assets/Tech/Python.png" alt="Python">
+					</div>
+
+					<p class="display-6 description">
+						• A bot built in Python using Selenium to automate account login and web parsing to automatically book session at the Toronto Panam Centre<br>
+						• Emails results to account owners using Gmail emailing libraries in Python
+					</p>
+
+					<a href="https://sayon.io/projects/Panam-Booking-Bot" target="_blank" class="btn btn-clear learn">
+						<i class="fa fa-github"></i>Github
+					</a>
+				</div>
+
+				<div class="projects-chosen img-thumbnail" id="pchosen5">
 					<img src="assets/Projects/Website.png" class="logo" alt="Website">
 
 					<div class="name">
@@ -222,7 +244,32 @@
 					</a>
 				</div>
 
-				<div class="projects-chosen img-thumbnail" id="pchosen5">
+				<div class="projects-chosen img-thumbnail" id="pchosen6">
+					<img src="assets/Projects/Spotlight.png" class="logo" alt="Spotlight">
+
+					<div class="name">
+						<p class="display-4">Spotlight</p>
+						<p class="display-5">Web Application</p>
+
+						<img src="assets/Tech/Java.png" alt="Java">
+						<img src="assets/Tech/HTML.png" alt="HTML">
+						<img src="assets/Tech/CSS.png" alt="CSS">
+						<img src="assets/Tech/JavaScript.png" alt="JavaScript">
+					</div>
+
+					<p class="display-6 description">
+						• HackTO 2022 Project - A Job board for Immigrant Women<br>
+						• Connects Immigrant Women, Employers, and Mentors<br>
+						• Front-end designed using Figma and built using REACT
+						• Hosted on Springboot and AWS Cloud as a REST API
+					</p>
+
+					<a href="https://sayon.io/projects/Spotlight" target="_blank" class="btn btn-clear learn">
+						<i class="fa fa-github"></i>Github
+					</a>
+				</div>
+
+				<div class="projects-chosen img-thumbnail" id="pchosen7">
 					<img src="assets/Projects/Buddi.png" class="logo" alt="Buddi">
 
 					<div class="name">
@@ -244,27 +291,6 @@
 					</p>
 
 					<a href="https://sayon.io/projects/Buddi" target="_blank" class="btn btn-clear learn">
-						<i class="fa fa-github"></i>Github
-					</a>
-				</div>
-
-				<div class="projects-chosen img-thumbnail" id="pchosen6">
-					<img src="assets/Projects/SecretSanta.png" class="logo" alt="Secret Santa">
-
-					<div class="name">
-						<p class="display-4">Secret Santa</p>
-						<p class="display-5">Python Application</p>
-
-						<img src="assets/Tech/Python.png" alt="Python">
-					</div>
-
-					<p class="display-6 description">
-						• Executes an algorithm developed in Python that generates random pairs of participants, with exclusions considered, that results in a continuous chain<br>
-						• Utilizes Python libraries to implement a seeding method to re-simulate random generation<br>
-						• Includes an email delivery system which accesses an SMTP server to automatically send emails to all participants
-					</p>
-
-					<a href="https://sayon.io/projects/Secret-Santa" target="_blank" class="btn btn-clear learn">
 						<i class="fa fa-github"></i>Github
 					</a>
 				</div>

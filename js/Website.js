@@ -70,6 +70,17 @@ function projinfo(p)
     $('#proj6').removeClass('no-hover');
     document.getElementById("pchosen6").style.display = "none";
   }
+  if (temp === "proj7" && document.getElementById("pinfo7").style.opacity !== "1") {
+    document.getElementById("pinfo7").style.opacity = "1";
+    document.getElementById("pbtn7").style.filter = "brightness(30%)";
+    $('#proj7').addClass('no-hover');
+    document.getElementById("pchosen7").style.display = "block";
+  } else {
+    document.getElementById("pinfo7").style.opacity = "0";
+    document.getElementById("pbtn7").style.filter = "brightness(100%)";
+    $('#proj7').removeClass('no-hover');
+    document.getElementById("pchosen7").style.display = "none";
+  }
 }
 
 function expinfo(e)
